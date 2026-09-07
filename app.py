@@ -40,7 +40,7 @@ if user_input.strip():
             with st.spinner("AI is correcting..."):
                 try:
                     res = client.models.generate_content(
-                        model="gemini-2.5-flash",
+                        model="gemini-3.6-flash",
                         contents=f"Correct the grammar, spelling and make this prompt clear and professional. Only return the corrected prompt, nothing else: '{user_input}'"
                     )
                     st.code(res.text, language="text")
@@ -59,7 +59,7 @@ if st.button("Generate 🚀"):
         with st.spinner(f"Generating with {style} style..."):
             try:
                 response = client.models.generate_content(
-                    model="gemini-2.5-flash",
+                    model="gemini-3.6-flash",
                     contents=final_prompt
                 )
                 st.success("Result:")
