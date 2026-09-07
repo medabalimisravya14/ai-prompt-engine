@@ -1,5 +1,2 @@
 streamlit
-google-generativeai
-python-dotenv
-pyspellchecker
-language-tool-python
+google-genai
